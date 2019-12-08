@@ -5,7 +5,7 @@ pipeline {
 	   steps {
                 echo 'compiling..'
 		git url: 'https://github.com/shimanprateek/DevOpsClassCodes'
-		sh script: 'mvn compile'
+		sh script: '/opt/apache-maven-3.6.2/bin/mvn compile'
            }
         }
         stage('codereview-pmd') {
